@@ -1,0 +1,85 @@
+* {
+    font-family    : "Consolas", sans-serif;
+    transition     : .3s ease;
+    box-sizing     : border-box;
+    margin         : 0;
+    padding        : 0;
+    outline        : none;
+    text-decoration: none;
+}
+
+:root {
+    --bgColor     : #ffd7af;
+    --formColor   : royalblue;
+    --formTxtColor: #fff;
+}
+
+.container {
+    height          : 100vh;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : space-between;
+    align-items     : center;
+    gap             : 1.5em;
+    background-color: var(--bgColor);
+}
+
+.container>div:nth-child(odd) {
+    padding: 2em;
+}
+
+.forms {
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : center;
+    gap            : 2em;
+}
+
+form {
+    background-color: var(--formColor);
+    color           : var(--formTxtColor);
+    padding         : 1em;
+    border-radius   : 5px;
+    width           : 450px;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    gap             : 1em;
+}
+
+form section {
+    display        : flex;
+    justify-content: stretch;
+    flex-direction : column;
+    gap            : .5em;
+}
+
+form section span {
+    display        : flex;
+    flex-direction : column;
+    justify-content: stretch;
+    align-items    : stretch;
+    gap            : 5px;
+}
+
+form section span input {
+    padding      : .5em;
+    border       : none;
+    border-radius: 5px;
+}
+
+form section>input {
+    padding      : .5em;
+    border-radius: 5px;
+    border       : none;
+    cursor       : pointer;
+    width        : fit-content;
+}
+
+.action-sec {
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : center;
+}
